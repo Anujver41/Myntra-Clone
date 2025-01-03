@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Myntra Functional Clone</title>
+
+    <link rel="stylesheet" href="mens.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="#"><img class="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"></a>
+        </div>
+        <nav class="nav_bar">
+            <a class="action_container" href="men.html">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Home & Living</a>
+            <a href="#">Beauty</a>
+            <a href="#">Studio <sup>New</sup></a>
+        </nav>
+        <div class="search_bar">
+            <span class="material-symbols-outlined search_icon">search</span>
+            <input class="search_input" placeholder="Search for products, brands and more">
+        </div>
+        <div class="action_bar">
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">person</span>
+                <span class="action_name">Profile</span>
+            </div>
+
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
+
+            <a class="action_container" href="bag.html">
+                <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name">Bag</span>
+                <span class="bag-item-count">0</span>
+            </a>
+        </div>
+    </header> 
+    <main>
+        <div class="mens-container">
+            <img class="men-img" src="${mens.image}" alt="item image">
+            <div class="mens_rating">
+                ${mens.rating.stars} ⭐ | ${mens.rating.count}
+            </div>
+            <div class="mens_company-name">
+                ${mens.company}
+            </div>
+            <div class="mens_item-name">
+                ${mens.item_name}
+            </div>
+            <div class="price">
+                <span class="current-price">₹ ${mens.current_price}</span>
+                <span class="original-price">₹ ${mens.original_price} </span>
+                <span class="discount">(${mens.discount_percentage}% OFF)</span>
+            </div>
+            <button class="btn-add-bag" onclick="addToBag()" >Add To Bag</button>
+        </div>
+        <div class="mens-container">
+               <div class="mens-image-container">
+                <img class="mens-item" src="https://brand.assets.adidas.com/image/upload/PAC_ORIGINALS_SHOES_PLP_IWP_TILE_CAMPUS_5e49714426.jpg">
+                <img class="mens-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0bel6EfWRIeum-Ukbz-l21OoIY3B0oiTNEQ&s">
+                <img class="mens-item" src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6f%2Fc2%2F6fc21137e72894ff670d270f17b9f700d480d59a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]">
+                <img class="mens-item" src="https://www.snitch.co.in/cdn/shop/files/SnitchOutdoorshoot1347.jpg?v=1700229317">
+            </div> 
+        </div>
+    </main>   
+    <footer>
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="copyright">
+            © 2023 www.myntra.com. All rights reserved.
+        </div>
+    </footer>
+    <script src="menitems.js"></script>
+    <script src="mens.js"></script>   
+    
+    
+</body>
+</html>

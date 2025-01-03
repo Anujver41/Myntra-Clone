@@ -1,0 +1,22 @@
+.mens-container {
+    display: flex; /* Align images in a row */
+    flex-wrap: wrap; /* Wrap to next line if container is small */
+    gap: 10px; /* Add space between images */
+    justify-content: center; /* Center the images */
+  }
+  
+  .mens-image-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px; /* Space between images */
+  }
+  
+  .mens-item {
+    margin: 20px 20px;
+    width: 300px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+    object-fit: cover; /* Crop to fill the box without distortion */
+    border: 1px solid #ccc; /* Optional: Add a border for neatness */
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  
